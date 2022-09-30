@@ -16,17 +16,17 @@ GRAY = (64, 64, 64)
 FPS = 30
 screen = pygame.display.set_mode((400, 400))
 
-rect(screen, GRAY, (0, 0, 400, 400))
-circle(screen, YELLOW, (200, 200), 100)
-circle(screen, BLACK, (200, 200), 101, 1)
-circle(screen, RED, (150, 180), 20)
-circle(screen, BLACK, (150, 180), 21, 1)
-circle(screen, BLACK, (150, 180), 10)
-circle(screen, RED, (250, 180), 15)
+rect(screen, GRAY, (0, 0, 400, 400)) #серый фон
+circle(screen, YELLOW, (200, 200), 100) #лицо
+circle(screen, BLACK, (200, 200), 101, 1) 
+circle(screen, RED, (150, 180), 20) #глаз1
+circle(screen, BLACK, (150, 180), 21, 1) 
+circle(screen, BLACK, (150, 180), 10) #зрачок1
+circle(screen, RED, (250, 180), 15) #глаз2
 circle(screen, BLACK, (250, 180), 16, 1)
-circle(screen, BLACK, (250, 180), 10)
-rect(screen, BLACK, (150, 250, 100, 20))
-polygon(screen, BLACK, ([[98, 124], [103, 116], [182, 166], [177, 174]]))
+circle(screen, BLACK, (250, 180), 10) #зрачок2
+rect(screen, BLACK, (150, 250, 100, 20)) #рот
+polygon(screen, BLACK, ([[98, 124], [103, 116], [182, 166], [177, 174]])) #брови
 polygon(screen, BLACK, ([[223, 174], [219, 166], [297, 136], [302, 144]]))
 
 pygame.display.update()
